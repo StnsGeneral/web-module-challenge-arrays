@@ -213,7 +213,7 @@ Use the getRandomFlavors function and new arrays below to do the following:
 function getRandomFlavors(arrayOne, arrayTwo, arrayThree, arrayFour) {
     let newArray = [...arrayOne, ...arrayTwo, ...arrayThree, ...arrayFour]
     let randomFlavors = []
-    while (randomFlavors.length <= 31) {
+    while (randomFlavors.length < 31) {
         let randomGenerator = Math.floor(Math.random() * newArray.length)
         randomFlavors.push(newArray[randomGenerator])
     }
