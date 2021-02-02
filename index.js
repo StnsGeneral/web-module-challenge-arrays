@@ -166,12 +166,12 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(filterArray, flavorString) {
-    let filteredArray = new Array()
-    for (let index = 0; index < filterArray.length; index++) {
-        if (filterArray.includes(flavorString.toUpperCase())) {
-            filteredArray.push()
+    let filteredArray = []
+    filterArray.forEach(flavor => {
+        if (flavor.includes(flavorString)) {
+            filteredArray.push(flavor)
         }
-    }
+    });
     return filteredArray
 }
 
